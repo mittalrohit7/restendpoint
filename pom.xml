@@ -11,10 +11,17 @@
 	</properties>
 	<scm>
 		<connection>scm:git:https://github.com/mittalrohit7/restendpoint.git</connection>
-		<developerConnection>scm:git:https://github.com/mittalrohit7/restendpoint.git</developerConnection>
+		<developerConnection>
+			scm:git:https://github.com/mittalrohit7/restendpoint.git</developerConnection>
 		<url>https://github.com/mittalrohit7/restendpoint.git</url>
 		<tag>HEAD</tag>
 	</scm>
+	<distributionManagement>
+		<repository>
+			<id>local-repo</id>
+			<url>file://${project.basedir}/local-repo</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>javax.ws.rs</groupId>
