@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.learning.tango</groupId>
 	<artifactId>tango-restendpoint</artifactId>
-	<version>5.0.0</version>
+	<version>5.0.1-SNAPSHOT</version>
 	<name>Simple rest endpoint helloworld</name>
 	<properties>
 		<java.version>21</java.version>
@@ -12,7 +12,7 @@
 		<developerConnection>
 			scm:git:https://github.com/mittalrohit7/restendpoint.git</developerConnection>
 		<url>https://github.com/mittalrohit7/restendpoint.git</url>
-		<tag>tango-restendpoint-5.0.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<distributionManagement>
 		<repository>
