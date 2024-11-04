@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-application
+spec:
+  replicas: 1  # Number of desired pods
+  selector:
+    matchLabels:
+      app: my-application
+  template:
+    metadata:
+      labels:
+        app: my-application
+    spec:
+      imagePullSecrets:
+        - name: myregistrykey
+      containers:
+        - name: my-container
+          image: docker.io/mittalrohit7/learning:latest  # Replace with your image name
+          ports:
+            - containerPort: 8080  # Replace with the port your application uses
